@@ -10,6 +10,7 @@ This project is about constructing a data pipeline and establishing data archite
 Metro Bike Share is a public bicycle-sharing system operated by Metro, in collaboration with partners like Bicycle Transit Systems. Designed to provide convenient and sustainable transportation options, Metro Bike Share allows users to rent bicycles for short trips in urban areas. The system aims to enhance mobility, reduce traffic congestion, and promote a healthier and more eco-friendly mode of transportation. With bike stations strategically located throughout cities, Metro Bike Share offers an accessible and efficient means of commuting, contributing to the overall accessibility and sustainability of urban transportation systems.
 
 ## Hierarchy
+![image](https://github.com/CELIUST/Metro_Bike_Project/assets/145673294/260bbc17-9b02-4f20-9cc8-1df9da0c1a52)
 
 ## Data Sourcing
 Source: [Link to Metro Bike Share Data](https://bikeshare.metro.net/about/data/)
@@ -49,7 +50,8 @@ Once the transformations were done, I saved the cleaned data into a csv file whi
  After the pipelines were successful I still needed to load the data into the empty table that were previously cretated and to do this I used the SQL Code seen in the image, which is done separately for each table. After the table are load, I can now create visualize the data. ![Loading_data_into_empty_tables.png](Loading_data_into_empty_tables.png)
 
 ## Serving
-Tableau Dashboard:
+Tableau Dashboard:[Link to Metro Bike Share Dashboard](https://public.tableau.com/views/Metro_Bike_Share_Insights/Metro_Bike_Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+
 
 
 
