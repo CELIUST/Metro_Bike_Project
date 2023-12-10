@@ -35,7 +35,7 @@ Once the links were successfully downloaded from the source, I noticed the links
 Data Store: Azure, often referred to as Microsoft Azure, is a cloud computing platform and service provided by Microsoft. 
 This is the python script I used to upload the unzip files into Azure containers: [Staging_Area_Metro_Bike.ipynb](Staging_Area_Metro_Bike.ipynb)
 
-## Modeling
+## Dimensional Model
 Fact Table and Dimension Table :![Metro_Bike_Dimensional_Modeling.png](Metro_Bike_Dimensional_Modeling.png)
 
 ## Data Warehouse
