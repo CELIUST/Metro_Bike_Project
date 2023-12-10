@@ -60,7 +60,7 @@ Once the transformations were done, I saved the cleaned data into a csv file whi
 2. Now, I have the empty tables created, I procceed to ingest the data performing a one-time load into the pipeline, from our Azure Data Lake Storage into our Synapse Data Warehouse.![Pipeline.png](Pipeline.png)
  After the pipelines were successful I still needed to load the data into the empty table that were previously cretated and to do this I used the SQL Code seen in the image, which is done separately for each table. After the table are load, I can now create visualize the data. ![Loading_data_into_empty_tables.png](Loading_data_into_empty_tables.png)
 
-## Serving
+## Serving the Data
 Tableau Dashboard:[Link to Metro Bike Share Dashboard](https://public.tableau.com/views/Metro_Bike_Share_Insights/Metro_Bike_Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
 
