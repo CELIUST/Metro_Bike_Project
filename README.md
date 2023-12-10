@@ -14,6 +14,6 @@ Metro Bike Share is a public bicycle-sharing system operated by Metro, in collab
 Source: https://bikeshare.metro.net/about/data/
 Data Dictinoary: Data_Dictionary_Metro_Bike.xlsx
 Tools: Google Colab and Python
-After getting fimilair with the data, I then procced to scarpe the website using these python code in Google Colab:
+After getting fimilair with the data, I then procced to scarpe the website using these python code in Google Colab: [Extraction_Metro_Bike.ipynb](path/to/Extraction_Metro_Bike.ipynb)
 
 Once the links were successfully downloaded, I noticed they were zip file, therefore I used the following codes to unzip the files:
