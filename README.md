@@ -1,6 +1,6 @@
-# Metro_Bike_Project
+# Metro_Bike_Project![Mike_share_logo.png](path/to/Mike_share_logo.png)
 # Metro Bike Share Trip Analysis
-[Mike_share_logo.png](Mike_share_logo.png)
+
 
 
 ## Introduction
