@@ -8,11 +8,11 @@ This project is about constructing a data pipeline and establishing data archite
 ## Commpany's Background
 Metro Bike Share is a public bicycle-sharing system operated by Metro, in collaboration with partners like Bicycle Transit Systems. Designed to provide convenient and sustainable transportation options, Metro Bike Share allows users to rent bicycles for short trips in urban areas. The system aims to enhance mobility, reduce traffic congestion, and promote a healthier and more eco-friendly mode of transportation. With bike stations strategically located throughout cities, Metro Bike Share offers an accessible and efficient means of commuting, contributing to the overall accessibility and sustainability of urban transportation systems.
 
-##Files image
+## Hierarchy
 
 ## Data Sourcing
 Source: https://bikeshare.metro.net/about/data/
-Data Dictinoary: Data_Dictionary_Metro_Bike.xlsx
+Data Dictinoary: [Data_Dictionary_Metro_Bike.xlsx](Data_Dictionary_Metro_Bike.xlsx)
 Tools: Google Colab and Python
 After getting fimilair with the data, I then procced to scarpe the website using these python code in Google Colab: [Extraction_Metro_Bike.ipynb](path/to/Extraction_Metro_Bike.ipynb)
 
@@ -26,7 +26,30 @@ This is the python script I used to upload the unzip files into Azure containers
 Fact Table and Dimension Table :![Metro_Bike_Dimensional_Modeling.png](Metro_Bike_Dimensional_Modeling.png)
 
 ## Data Warehouse
-Using the Azure Synapse, I created a Synapse workspace that will conatined a storage container and SQL pool. The storage container will hold the cleaned data after it's transformed and the SQL pool
+Using the Azure Synapse, I created a Synapse workspace that will conatined a storage container and SQL pool. The storage container will hold the cleaned data after it's transformed and the SQL pool which allows me to allocate and manage resources for querying large datasets. 
+
+## ETL
+First, I extracted the data from the Azure container that store the data. 
+Then performed these transformations:
+1. Checked for duplicated rows
+2. Replaced missing null values
+3. Converted data types
+4. Lowercased the data
+5. Implement Datetime format
+6. Generated unique IDs for station_id and time_id
+Here is the python codes used: [ETL.ipynb](ETL.ipynb)
+
+Once the transformations were done, I saved the cleaned data into a csv file which gets loaded into the storage container in the Synapse workspace using the code:[Loading_into_storage_container_datawarehouse.ipynb](Loading_into_storage_container_datawarehouse.ipynb)
+
+## Modeling
+1. In Azure Synapse Analytics, I need to create empty tables in my SQL pool which were done using the SQL Script:[Your SQL Script](your_script.sql)
+   Here is how the empty tables looked after running the code:![Creating_empty_tables.png](Creating_empty_tables.png)
+2. Now, I have the empty tables created, I procceed to ingest the data performing a one-time load into the pipeline, from our Azure Data Lake Storage into our Synapse Data Warehouse.![Pipeline.png](Pipeline.png)
+ After the pipelines were successful I still needed to load the data into the empty table that were previously cretated and to do this I used the SQL Code seen in the image, which is done separately for each table. After the table are load, I can now create visualize the data. ![Loading_data_into_empty_tables.png](Loading_data_into_empty_tables.png)
+
+## Serving
+Tableau Dashboard:
+
 
 
 
