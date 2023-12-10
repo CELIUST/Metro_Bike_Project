@@ -1,4 +1,6 @@
-# Metro_Bike_Project![image](https://github.com/CELIUST/Metro_Bike_Project/assets/145673294/a05259c1-5045-4ad6-800f-65d61c62283a)
+
+![image](https://github.com/CELIUST/Metro_Bike_Project/assets/145673294/a05259c1-5045-4ad6-800f-65d61c62283a)
+# Metro_Bike_Project
 # Metro Bike Share Trip Analysis
 
 
@@ -10,7 +12,7 @@ This project is about constructing a data pipeline and establishing data archite
 Metro Bike Share is a public bicycle-sharing system operated by Metro, in collaboration with partners like Bicycle Transit Systems. Designed to provide convenient and sustainable transportation options, Metro Bike Share allows users to rent bicycles for short trips in urban areas. The system aims to enhance mobility, reduce traffic congestion, and promote a healthier and more eco-friendly mode of transportation. With bike stations strategically located throughout cities, Metro Bike Share offers an accessible and efficient means of commuting, contributing to the overall accessibility and sustainability of urban transportation systems.
 
 ## Hierarchy
-![image](https://github.com/CELIUST/Metro_Bike_Project/assets/145673294/260bbc17-9b02-4f20-9cc8-1df9da0c1a52)
+
 
 ## Data Sourcing
 Source: [Link to Metro Bike Share Data](https://bikeshare.metro.net/about/data/)
