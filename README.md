@@ -39,10 +39,10 @@ This is the python script I used to upload the unzip files into Azure containers
 Fact Table and Dimension Table :![Metro_Bike_Dimensional_Modeling.png](Metro_Bike_Dimensional_Modeling.png)
 
 ## Data Warehouse
-Using the Azure Synapse, I created a Synapse workspace that will conatined a storage container and SQL pool. The storage container will hold the cleaned data after it's transformed and the SQL pool which allows me to allocate and manage resources for querying large datasets. 
+Using Azure Synapse, I created a Synapse workspace that will contain a storage container and SQL pool. The storage container will hold the cleaned data after it's transformed and the SQL pool which allows me to allocate and manage resources for querying large datasets. 
 
 ## ETL
-First, I extracted the data from the Azure container that store the data. 
+First, I extracted the data from the Azure container that stored the data. 
 Then performed these transformations:
 1. Checked for duplicated rows
 2. Replaced missing null values
