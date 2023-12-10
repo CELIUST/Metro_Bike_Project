@@ -19,7 +19,8 @@ Go live date: The date that the station was first available
 Region: The municipality or area where a station is located, includes DTLA (Downtown LA), Pasadena, Port of LA, Venice
 Status: "Active" for stations available or "Inactive" for stations that are not available as of the latest update
 
-## Hierarchy
+## Data Flow Architecture of Pipeline
+![Data_Flow_Architecture_of_a_Pipeline.png](Data_Flow_Architecture_of_a_Pipeline.png)
 
 
 ## Data Sourcing
