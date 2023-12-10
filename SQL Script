@@ -1,0 +1,61 @@
+-- Trip Fact Table
+CREATE TABLE metrobikepool.dbo.metro_bike_trip_fact (
+   trip_id              int         PRIMARY KEY NONCLUSTERED NOT ENFORCED,
+   duration             int         NULL,
+   station_id           nvarchar(255)        NULL,
+   time_id              int      NULL,
+   bike_id              int         NULL,
+   plan_duration        int         NULL,
+   trip_route_category  nvarchar(255) NULL,
+   passholder_type      nvarchar(255) NULL
+  
+);
+
+
+-- Dimension Tables
+-- Bike ID Dimension
+CREATE TABLE metrobikepool.dbo.metro_bike_bike_dim (
+   bike_id              int         PRIMARY KEY NONCLUSTERED NOT ENFORCED,
+   bike_type            nvarchar(255) NULL
+
+
+);
+
+
+-- Stations Dimension
+CREATE TABLE metrobikepool.dbo.metro_bike_stations_dim (
+   station_id           nvarchar(255)      PRIMARY KEY NONCLUSTERED NOT ENFORCED,
+   start_station        int         NULL,
+   start_lat            float       NULL,
+   start_lon            float       NULL,
+   end_station          int         NULL,
+   end_lat              float       NULL,
+   end_lon              float       NULL
+
+
+);
+
+
+-- Time Dimension
+CREATE TABLE metrobikepool.dbo.metro_bike_time_dim (
+   time_id              int      PRIMARY KEY NONCLUSTERED NOT ENFORCED,
+   start_time           datetime    NOT NULL,
+   start_time_year      int         NULL,
+   start_time_month     int         NULL,
+   start_time_day       int         NULL,
+   start_time_hour      int         NULL,
+   start_time_minutes   int         NULL,
+   end_time             datetime    NOT NULL,
+   end_time_year        int         NULL,
+   end_time_month       int         NULL,
+   end_time_day         int         NULL,
+   end_time_hour        int         NULL,
+   end_time_minutes     int         NULL
+  
+);
+
+
+SELECT * FROM metrobikepool.dbo.metro_bike_trip_fact;
+SELECT * FROM metrobikepool.dbo.metro_bike_bike_dim
+SELECT * FROM metrobikepool.dbo.metro_bike_stations_dim
+SELECT * FROM metrobikepool.dbo.metro_bike_time_dim
