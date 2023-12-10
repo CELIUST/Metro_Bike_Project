@@ -16,4 +16,13 @@ Data Dictinoary: Data_Dictionary_Metro_Bike.xlsx
 Tools: Google Colab and Python
 After getting fimilair with the data, I then procced to scarpe the website using these python code in Google Colab: [Extraction_Metro_Bike.ipynb](path/to/Extraction_Metro_Bike.ipynb)
 
-Once the links were successfully downloaded, I noticed they were zip file, therefore I used the following codes to unzip the files:
+Once the links were successfully downloaded from the source, I noticed the links were zip file, which meant they were compressed files, therefore I used the following codes to unzip the files: [Unzip_Metro_Bike.ipynb](path/to/Unzip_Metro_Bike.ipynb)
+
+## Storage
+Data Store: Azure, often referred to as Microsoft Azure, is a cloud computing platform and service provided by Microsoft.
+This is the python script I used to upload the unzip files into Azure containers: 
+
+## Modeling
+
+
+
