@@ -19,11 +19,15 @@ After getting fimilair with the data, I then procced to scarpe the website using
 Once the links were successfully downloaded from the source, I noticed the links were zip file, which meant they were compressed files, therefore I used the following codes to unzip the files: [Unzip_Metro_Bike.ipynb](path/to/Unzip_Metro_Bike.ipynb)
 
 ## Storage
-Data Store: Azure, often referred to as Microsoft Azure, is a cloud computing platform and service provided by Microsoft.
+Data Store: Azure, often referred to as Microsoft Azure, is a cloud computing platform and service provided by Microsoft. 
 This is the python script I used to upload the unzip files into Azure containers: [Staging_Area_Metro_Bike.ipynb](Staging_Area_Metro_Bike.ipynb)
 
 ## Modeling
 Fact Table and Dimension Table :![Metro_Bike_Dimensional_Modeling.png](Metro_Bike_Dimensional_Modeling.png)
+
+## Data Warehouse
+Using the Azure Synapse, I created a Synapse workspace that will conatined a storage container and SQL pool. The storage container will hold the cleaned data after it's transformed and the SQL pool
+
 
 
 
