@@ -11,6 +11,14 @@ This project is about constructing a data pipeline and establishing data archite
 ## Commpany's Background
 Metro Bike Share is a public bicycle-sharing system operated by Metro, in collaboration with partners like Bicycle Transit Systems. Designed to provide convenient and sustainable transportation options, Metro Bike Share allows users to rent bicycles for short trips in urban areas. The system aims to enhance mobility, reduce traffic congestion, and promote a healthier and more eco-friendly mode of transportation. With bike stations strategically located throughout cities, Metro Bike Share offers an accessible and efficient means of commuting, contributing to the overall accessibility and sustainability of urban transportation systems.
 
+
+Data Format (Taken from the Metro Bike Share Website)
+Station ID: Unique integer that identifies the station (this is the same ID used in the Trips and Station Status data)
+Station Name: The public name of the station. "Virtual Station" is used by staff to check in or check out a bike remotely for a special event or in a situation in which a bike could not otherwise be checked in or out to a station.
+Go live date: The date that the station was first available
+Region: The municipality or area where a station is located, includes DTLA (Downtown LA), Pasadena, Port of LA, Venice
+Status: "Active" for stations available or "Inactive" for stations that are not available as of the latest update
+
 ## Hierarchy
 
 
