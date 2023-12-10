@@ -1,4 +1,4 @@
-# Metro_Bike_Project![Mike_share_logo.png](path/to/Mike_share_logo.png)
+# Metro_Bike_Project![image](https://github.com/CELIUST/Metro_Bike_Project/assets/145673294/a05259c1-5045-4ad6-800f-65d61c62283a)
 # Metro Bike Share Trip Analysis
 
 
