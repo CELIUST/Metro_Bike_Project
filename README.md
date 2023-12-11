@@ -63,15 +63,13 @@ Once the transformations were done, I saved the cleaned data into a csv file whi
 
 ## Serving the Data
 Tableau Dashboard:[Link to Metro Bike Share Dashboard](https://public.tableau.com/views/Metro_Bike_Share_Insights/Metro_Bike_Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
-Passholder Type and Trip Route Category:
 
-1. Passholder Type indicates the subscription plan, such as "Monthly Pass," while Trip Route Category distinguishes between "Round Trips" and "One Way" trips, providing insights into user preferences and trip patterns.
-Bike Type Distribution:
-
-2. Bike Type Distribution reveals the proportion of standard, electric assist, and smart bikes in the bike-sharing system, offering valuable insights into bike popularity and usage patterns.
-Most Popular Start and Most Popular End Stations:
-
-3. Most Popular Start Stations identify where bike trips frequently begin, aiding in optimizing bike availability, while Most Popular End Stations highlight common trip conclusion points, facilitating efficient station management for a seamless bike-sharing experience.
+1. Passholder Type and Trip Route Category:
+Passholder Type indicates the subscription plan, such as "Monthly Pass," while Trip Route Category distinguishes between "Round Trips" and "One Way" trips, providing insights into user preferences and trip patterns.
+2. Bike Type Distribution:
+Bike Type Distribution reveals the proportion of standard, electric assist, and smart bikes in the bike-sharing system, offering valuable insights into bike popularity and usage patterns.
+3. Most Popular Start and Most Popular End Stations:
+Most Popular Start Stations identify where bike trips frequently begin, aiding in optimizing bike availability, while Most Popular End Stations highlight common trip conclusion points, facilitating efficient station management for a seamless bike-sharing experience.
 
 
 
