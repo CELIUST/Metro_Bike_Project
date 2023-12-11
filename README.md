@@ -13,28 +13,24 @@ Metro Bike Share is a public bicycle-sharing system operated by Metro, in collab
 
 
 Data Format (Taken from the Metro Bike Share Website)
-
-Station ID: Unique integer that identifies the station (this is the same ID used in the Trips and Station Status data)
-
-Station Name: The public name of the station. "Virtual Station" is used by staff to check in or check out a bike remotely for a special event or in a situation in which a bike could not otherwise be checked in or out to a station.
-
-Go live date: The date that the station was first available
-
-Region: The municipality or area where a station is located, includes DTLA (Downtown LA), Pasadena, Port of LA, Venice
-
-Status: "Active" for stations available or "Inactive" for stations that are not available as of the latest update
+1. Station ID: Unique integer that identifies the station (this is the same ID used in the Trips and Station Status data)
+2. Station Name: The public name of the station. "Virtual Station" is used by staff to check in or check out a bike remotely for a special event or in a situation in which a bike could not otherwise be checked in or out to a station.
+3. Go live date: The date that the station was first available
+4. Region: The municipality or area where a station is located, includes DTLA (Downtown LA), Pasadena, Port of LA, Venice
+5. Status: "Active" for stations available or "Inactive" for stations that are not available as of the latest update
 
 ## Data Flow Architecture of Pipeline
 ![Data_Flow_Architecture_of_a_Pipeline.png](Data_Flow_Architecture_of_a_Pipeline.png)
 
 
 ## Data Sourcing
-Source: [Link to Metro Bike Share Data](https://bikeshare.metro.net/about/data/)
-Data Dictinoary: [Data_Dictionary_Metro_Bike.xlsx](Data_Dictionary_Metro_Bike.xlsx)
-Tools: Google Colab and Python
+1. Source: [Link to Metro Bike Share Data](https://bikeshare.metro.net/about/data/)
+2. Data Dictinoary: [Data_Dictionary_Metro_Bike.xlsx](Data_Dictionary_Metro_Bike.xlsx)
+3. Tools: Google Colab and Python
+   
 After getting fimilair with the data, I then procced to scarpe the website using these python code in Google Colab: [Extraction_Metro_Bike.ipynb](path/to/Extraction_Metro_Bike.ipynb)
 
-Once the links were successfully downloaded from the source, I noticed the links were zip file, which meant they were compressed files, therefore I used the following codes to unzip the files: [Unzip_Metro_Bike.ipynb](path/to/Unzip_Metro_Bike.ipynb)
+Once the links were successfully downloaded from the source, I noticed the links were zip files, which meant they were compressed files, therefore I used the following codes to unzip the files: [Unzip_Metro_Bike.ipynb](path/to/Unzip_Metro_Bike.ipynb)
 
 ## Storage
 Data Store: Azure, often referred to as Microsoft Azure, is a cloud computing platform and service provided by Microsoft. 
@@ -60,14 +56,22 @@ Here is the python codes used: [ETL.ipynb](ETL.ipynb)
 Once the transformations were done, I saved the cleaned data into a csv file which gets loaded into the storage container in the Synapse workspace using the code:[Loading_into_storage_container_datawarehouse.ipynb](Loading_into_storage_container_datawarehouse.ipynb)
 
 ## Modeling
-1. In Azure Synapse Analytics, I need to create empty tables in my SQL pool which were done using the SQL Script:[Your SQL Script](your_script.sql)
+1. In Azure Synapse Analytics, I needed to create empty tables in my SQL pool which were done using this SQL Script:[Your SQL Script](your_script.sql)
    Here is how the empty tables looked after running the code:![Creating_empty_tables.png](Creating_empty_tables.png)
 2. Now, I have the empty tables created, I procceed to ingest the data performing a one-time load into the pipeline, from our Azure Data Lake Storage into our Synapse Data Warehouse.![Pipeline.png](Pipeline.png)
- After the pipelines were successful I still needed to load the data into the empty table that were previously cretated and to do this I used the SQL Code seen in the image, which is done separately for each table. After the table are load, I can now create visualize the data. ![Loading_data_into_empty_tables.png](Loading_data_into_empty_tables.png)
+ After the pipelines were successful I still needed to load the data into the empty table that were previously cretated and to do this I used this SQL Code seen in the image, which is done separately for each table. After the table are loaded, I can now create visuals for analysis. ![Loading_data_into_empty_tables.png](Loading_data_into_empty_tables.png)
 
 ## Serving the Data
 Tableau Dashboard:[Link to Metro Bike Share Dashboard](https://public.tableau.com/views/Metro_Bike_Share_Insights/Metro_Bike_Dashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+Passholder Type and Trip Route Category:
 
+1. Passholder Type indicates the subscription plan, such as "Monthly Pass," while Trip Route Category distinguishes between "Round Trips" and "One Way" trips, providing insights into user preferences and trip patterns.
+Bike Type Distribution:
+
+2. Bike Type Distribution reveals the proportion of standard, electric assist, and smart bikes in the bike-sharing system, offering valuable insights into bike popularity and usage patterns.
+Most Popular Start and Most Popular End Stations:
+
+3. Most Popular Start Stations identify where bike trips frequently begin, aiding in optimizing bike availability, while Most Popular End Stations highlight common trip conclusion points, facilitating efficient station management for a seamless bike-sharing experience.
 
 
 
