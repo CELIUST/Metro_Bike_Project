@@ -13,10 +13,15 @@ Metro Bike Share is a public bicycle-sharing system operated by Metro, in collab
 
 
 Data Format (Taken from the Metro Bike Share Website)
+
 Station ID: Unique integer that identifies the station (this is the same ID used in the Trips and Station Status data)
+
 Station Name: The public name of the station. "Virtual Station" is used by staff to check in or check out a bike remotely for a special event or in a situation in which a bike could not otherwise be checked in or out to a station.
+
 Go live date: The date that the station was first available
+
 Region: The municipality or area where a station is located, includes DTLA (Downtown LA), Pasadena, Port of LA, Venice
+
 Status: "Active" for stations available or "Inactive" for stations that are not available as of the latest update
 
 ## Data Flow Architecture of Pipeline
